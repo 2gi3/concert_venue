@@ -14,6 +14,6 @@ test("Band component displays correct band informations", async () => {
 
 test("Band component displays error", () => {
   render(<BandComponent band={null} error={"Everything is fine"} />);
-  const error = screen.getByRole("heading", { name: /everyting is fine/i });
+  const error = screen.getByRole("heading", { name: /everything is fine/i });
   expect(error).toBeInTheDocument();
 });
